@@ -162,7 +162,7 @@ export const addMovieToList = (movie) => {
       class: `movie__image`,
       alt: movie.Title,
       title: movie.Title,
-      src: /^(http|https):\/\//i.test(movie.Poster) ? movie.Poster : `assets/img/no-image.png`,
+      src: /^(http||https):\/\//i.test(movie.Poster) ? movie.Poster : `assets/img/no-image.png`,
     },
     container: item,
   });
